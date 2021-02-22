@@ -41,7 +41,6 @@ Configure Cluster
 
 ![configure cluster](https://github.com/sandyghai/Migrate-Kubernetes-Cluster-To-Amazon-Elastic-Kubernetes-Service/blob/master/eks-image-1.png?raw=true)
 
-
 When you specify networking for your cluster select Cluster Endpoint access option as Public and private which will allow pods to interact with each other and allow you to add services which will be accessible via the outside world.
 
 ![specify networking](https://github.com/sandyghai/Migrate-Kubernetes-Cluster-To-Amazon-Elastic-Kubernetes-Service/blob/master/eks-image-2.png?raw=true)
@@ -63,6 +62,15 @@ aws eks --region <region-code> describe-cluster --name kube-cluster-demo --query
 When your cluster status is ACTIVE, you can proceed to run aws cli command to update kubeconfig for your EKS cluster. Specify the AWS region where you have created your cluster.
 
 aws eks --region <region-code> update-kubeconfig --name kube-cluster-demo
+
+### Adding Nodes to EKS Cluster
+Now we need to add some worker nodes to EKS cluster to start running our containers. Use the link below to follow instruction to create managed node group. 
+
+[Creating a managed node group](https://docs.aws.amazon.com/eks/latest/userguide/create-managed-node-group.html)
+
+You vcan watch the status of your nodes and wait for them to reach the Ready status before deploying applications.
+
+kubectl get nodes --watch
 
 ## References
 
