@@ -12,7 +12,7 @@ Amazon Elastic Kubernetes Service (EKS) is a managed Kubernetes service that mak
 
 ## Prerequisites And Considerations
 
-There are Prerequisites and considerations to ensure a successful Amazon EKS migration. They are in relation to Security, Networking, Compute Options, Kubernetes Version and Storage. Follow the [
+There are Prerequisites and considerations to ensure a successful Amazon EKS migration. They are in relation to Security, Networking, Compute Options, Kubernetes Version and Storage. Follow the 
 
 [Prerequisites and Considerations](https://aws.amazon.com/blogs/architecture/field-notes-migrating-a-self-managed-kubernetes-cluster-on-ec2-to-amazon-eks/)
 
