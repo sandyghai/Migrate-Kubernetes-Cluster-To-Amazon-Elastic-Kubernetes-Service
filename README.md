@@ -41,8 +41,8 @@ The easiest way to create an EKS cluster is via the AWS console. However, you ca
 Configure Cluster
 ![configure cluster](https://github.com/sandyghai/Migrate-Kubernetes-Cluster-To-Amazon-Elastic-Kubernetes-Service/blob/master/eks-image-1.png?raw=true)
 
-Specify Networking
-When you specify networking for your cluster you have to select Cluster Endpoint access, choose Public and private as your option which will allow pods to interact with each other and allow you to add services which will be accessible via the outside world.
+
+When you specify networking for your cluster select Cluster Endpoint access option as Public and private which will allow pods to interact with each other and allow you to add services which will be accessible via the outside world.
 ![specify networking](https://github.com/sandyghai/Migrate-Kubernetes-Cluster-To-Amazon-Elastic-Kubernetes-Service/blob/master/eks-image-2.png?raw=true)
 
 Configure Logging
