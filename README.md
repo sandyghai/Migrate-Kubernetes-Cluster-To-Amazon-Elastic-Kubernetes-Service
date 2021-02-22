@@ -68,7 +68,7 @@ Now we need to add some worker nodes to EKS cluster to start running our contain
 
 [Creating a managed node group](https://docs.aws.amazon.com/eks/latest/userguide/create-managed-node-group.html)
 
-You vcan watch the status of your nodes and wait for them to reach the Ready status before deploying applications.
+You can watch the status of your nodes and wait for them to reach the Ready status before deploying applications.
 
 kubectl get nodes --watch
 
