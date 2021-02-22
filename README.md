@@ -2,7 +2,7 @@
 
 When it comes to containerized applications, Kubernetes has become an obvious orchestration tool of choice nowadays. If you're learning Kubernetes, and trying to set up a Kubernetes cluster on a local machine use this blog post from AWS. [Running Kubernetes on your laptop](https://aws.amazon.com/blogs/opensource/kubernetes-on-laptop/). 
 
-When it comes to a production environment for Kubernetes cluster, we need to ensure that there is no downtime in our cluster. Wouldn't it be nice if this was handled and we keep our focus on building applications.
+When it comes to a production environment for Kubernetes cluster, we need to ensure zero downtime. Wouldn't it be nice if this was handled and we keep our focus on building applications.
 
 That's where Amazon Elastic Kubernetes Service comes to the rescue!
 
