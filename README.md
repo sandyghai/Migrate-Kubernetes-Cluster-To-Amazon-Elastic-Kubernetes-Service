@@ -55,13 +55,13 @@ Review and Create
 
 Create backup of original config cp ~/.kube/config  ~/.kube/config-backup
 
-Cluster provisioning takes several minutes. You can query the status of your cluster with the following command or just check via AWS console.
+Cluster provisioning takes several minutes. You can query the status of your cluster with the following command or just check via AWS console. Specify --region param for your newly created cluster.
 
-aws eks --region <region-code> describe-cluster --name kube-cluster-demo --query "cluster.status"
+aws eks --region us-east-1 describe-cluster --name kube-cluster-demo --query "cluster.status"
 
-When your cluster status is ACTIVE, you can proceed to run aws cli command to update kubeconfig for your EKS cluster. Specify the AWS region where you have created your cluster.
+When your cluster status is ACTIVE, you can proceed to run aws cli command to update kubeconfig for your EKS cluster. 
 
-aws eks --region <region-code> update-kubeconfig --name kube-cluster-demo
+aws eks --region us-east-1 update-kubeconfig --name kube-cluster-demo
 
 ### Adding Nodes to EKS Cluster
 Now we need to add some worker nodes to EKS cluster to start running our containers. Use the link below to follow instruction to create managed node group. 
